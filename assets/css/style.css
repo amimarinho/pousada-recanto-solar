@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  /* font-family: "lato", */
 }
 
 :root {
@@ -31,20 +30,20 @@ img {
   max-width: 100%;
 }
 
-.menu ul {
-  background-color: #e76f51;
-
+.menu-item {
   padding: 16px 3.5rem;
   margin: auto;
 }
+
 .menu li {
+  background-color: transparent;
   display: inline;
   justify-items: flex-end;
   margin: 16px;
 }
 
 .menu a {
-  color: #ffff;
+  color: var(--color-accent);
 }
 
 .btn {
@@ -53,10 +52,6 @@ img {
   border-radius: 5px;
   color: var(--color-light);
   transition: 0.5s;
-}
-
-.btn:hover {
-  background-color: var(--color-hover);
 }
 
 .hero {
@@ -71,39 +66,68 @@ img {
   align-items: center;
 }
 
-.hero-content {
+.hero-content{
+  font: 400;
   width: 60%;
   padding: 5rem;
   color: var(--color-light);
 }
 
-.hero-content h2 {
-  font-size: 7vmin;
+.hero-content h1 {
+  font-size: 3em;
 }
 
 .hero-content p {
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 2rem;
   line-height: 3.6rem;
 }
 
 .quarto-title {
+  display: flex;
   font-size: 5vmin;
   text-align: center;
   margin: 4rem 0 2rem;
   color: var(--color-accent);
 }
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main h2{
+  justify-content: center;
+  color: var(--color-accent);
+  font-family: "DM Serif Display", serif;
+  font-weight: 800;
+  font-style: bold;;
+  width: 100%;
+  font-weight: 700;
+  font-size: 32px;
+  margin:0.5
+}
+
+.quarto-list{
+  display: grid;
+  width:100%;
+
+}
+
+
 
 .quarto-list {
-  width: 100%;
+  
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 }
+.quarto-item img {
+width: 300px;
+}
 
 .quarto-item {
-  width: 28%;
+  
   margin: 3rem 0;
   text-align: center;
   display: flex;
@@ -116,3 +140,10 @@ img {
   border-radius: 5px;
   transition: 0.5s;
 }
+
+
+
+.btn:hover {
+  background-color: var(--color-hover);
+}
+
